@@ -38,7 +38,12 @@ const MORSE_TABLE = {
 };
 
 function decode(expr) {
-    // write your solution here
+    let decades = expr.length / 10;
+    let list = [];
+    for (i = 0; i< decades; i++) {
+        list.push(expr.slice(i*10, i*10 + 10));
+    }
+
 }
 
 module.exports = {
